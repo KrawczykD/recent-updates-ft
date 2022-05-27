@@ -1,0 +1,15 @@
+{
+  "recommendations": [
+    "johnsoncodehk.volar",
+    "lokalise.i18n-ally",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "antfu.vite",
+    "jcbuisson.vue",
+    "hollowtree.vue-snippets",
+    "vivaxy.vscode-conventional-commits",
+    "mhutchie.git-graph",
+    "donjayamanne.githistory",
+    "eamodio.gitlens"
+  ]
+}

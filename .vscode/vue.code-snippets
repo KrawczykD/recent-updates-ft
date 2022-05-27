@@ -1,0 +1,84 @@
+{
+	// Place your vue3-vite-spa-template workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"Basic Vite": {
+		"prefix": "BasicViteSetup",
+		"body": [
+			"<script setup lang=\"ts\">",
+			"import { ref, onMounted } from 'vue';",
+			"",
+			"const el = ref();",
+			"",
+			"onMounted(() => {",
+			"  el.value; // <div>",
+			"});",
+			"</script>",
+			"",
+			"<template>",
+			"  <div ref=\"el\"></div>",
+			"</template>",
+			"",
+			"<style scoped>",
+			"/** All scoped css here */",
+			"</style>",
+			""
+		],
+		"description": "The basic vite using the setup script"
+	},
+	"Vue Watch": {
+		"prefix": "VueWatch",
+		"body": [
+			"watch(",
+			"  () => props.selected,",
+			"  (first, second) => {",
+			"\tconsole.log('Watch props.selected function called with args:', first, second);",
+			"  }",
+			");"
+		],
+		"description": "The vue watch snippet"
+	},
+	"Vue Emit": {
+		"prefix": "VueEmit",
+		"body": [
+			"const emit = defineEmits<{",
+			"  (e: 'change', id: number): void;",
+			"  (e: 'update', value: string): void;",
+			"}>();"
+		],
+		"description": "The emit for vue snippet"
+	},
+	"Vue Props with Defaults": {
+		"prefix": "VuePropsDefaults",
+		"body": [
+			"const props = withDefaults(defineProps<InterfaceHere>(), {",
+			"  msg: 'hello',",
+			"  labels: () => ['one', 'two']",
+			"});"
+		],
+		"description": "Props with defaults for vue "
+	},
+	"Vue Props": {
+		"prefix": "VueProps",
+		"body": [
+			"const props = defineProps<{",
+			"  foo: string;",
+			"  bar?: number;",
+			"}>();"
+		],
+		"description": "The props for vue without defaults"
+	}
+}

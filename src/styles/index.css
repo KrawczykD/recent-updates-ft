@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .bo-border {
+        border-style: solid;
+        border-color: white;
+        border-width:.13rem;
+        border-radius: 5px;
+    }
+
+    .bo-border:hover {
+        border-color: var(--bo-blue);
+    }
+}
+
+:root {
+    --bo-blue: #176ee6;
+    --bo-black: #222;
+
+}
